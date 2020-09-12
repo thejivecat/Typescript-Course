@@ -68,3 +68,12 @@ add2 = (n1: number, n2: number) => {
   return n1 + n2;
 }
 
+//you can add optional properties on interfaces
+
+//e.g.
+//interface Named {
+//   readonly name: string;
+//   outputName?: string;
+// }
+// you can also provide optional paramaters (e.g. in a constructor of a class, or any function)
+
