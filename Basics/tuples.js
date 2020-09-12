@@ -1,5 +1,5 @@
 "use strict";
-var person3 = {
+const person3 = {
     role: [1, 'author']
 };
 //tuple type, an array with exactly 2 items with exactly the types assigned

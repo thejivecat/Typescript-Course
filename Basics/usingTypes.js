@@ -12,20 +12,20 @@ console.log(add(1, 2));
 //js uses 'dynamic types' (resolved at runtime) whereas
 //ts uses 'static types' (set during development)
 //function call only takes as many args as paramaters are defined in function def
-var add1;
-(function (n1, n2, showResult, phrase) {
-    var result = n1 + n2;
+const add1;
+(n1, n2, showResult, phrase) => {
+    const result = n1 + n2;
     if (showResult) {
         console.log(phrase + result);
     }
     else {
         return result;
     }
-});
-var number1 = 5; //5.0 is same(float)
-var number2 = 2.8;
-var showResult = true;
-var resultPhrase = 'Result is: ';
+};
+const number1 = 5; //5.0 is same(float)
+const number2 = 2.8;
+const showResult = true;
+const resultPhrase = 'Result is: ';
 add1(number1, number2, showResult, resultPhrase);
 //using number, boolean, string
 //ts logic only runs in compiler, but js file that is created doesn't have any ts

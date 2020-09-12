@@ -1,10 +1,10 @@
 "use strict";
-var e1 = {
+const e1 = {
     name: 'Srujan',
     privileges: ['create-server'],
     startDate: new Date(),
 };
-var num1 = 5;
+let num1 = 5;
 // num1 = 'hello'; doesn't work b/c Universal is only number type based on intersection 
 //type guards
 function add(a, b) {
@@ -30,27 +30,21 @@ function printEmployeeInfo(emp) {
 }
 printEmployeeInfo(e1);
 //when working with classes, use the instanceof type guard
-var Car = /** @class */ (function () {
-    function Car() {
-    }
-    Car.prototype.drive = function () {
+class Car {
+    drive() {
         console.log('Driving...');
-    };
-    return Car;
-}());
-var Truck = /** @class */ (function () {
-    function Truck() {
     }
-    Truck.prototype.drive = function () {
+}
+class Truck {
+    drive() {
         console.log('Driving a truck...');
-    };
-    Truck.prototype.loadCargo = function (amount) {
+    }
+    loadCargo(amount) {
         console.log('Loading cargo...' + amount);
-    };
-    return Truck;
-}());
-var v1 = new Car();
-var v2 = new Truck();
+    }
+}
+const v1 = new Car();
+const v2 = new Truck();
 // function useVehicle(vehicle: Vehicle) {
 //   vehicle.drive();
 //   if ('loadCargo' in vehicle) { //one way to typeguard
@@ -66,7 +60,7 @@ function useVehicle(vehicle) {
 useVehicle(v1);
 useVehicle(v2);
 function moveAnimal(animal) {
-    var speed;
+    let speed;
     switch (animal.type) {
         case 'bird':
             speed = animal.flyingSpeed;

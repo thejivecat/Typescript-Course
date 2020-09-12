@@ -1,19 +1,19 @@
 "use strict";
 //objects:
 // {age: 30}
-var person = {
+const person = {
     name: 'Srujan',
     age: 30,
 };
 console.log(person);
 console.log(person.nickname); //property doesn't exist--error
 //property types on objects are inferred
-var person1 = {
+const person1 = {
     name: 'surj',
     age: 30
 };
 //nested objects:
-var product = {
+const product = {
     id: 'abc1',
     price: 12.99,
     tags: ['great-offer', 'hot-and-new'],

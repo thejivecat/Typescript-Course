@@ -6,7 +6,7 @@
 //based on what types of inputs you have, thus requiring additional checks
 //typescript won't let you use string methods on a number and vice versa with union types
 function combine(input1, input2) {
-    var result;
+    let result;
     if (typeof input1 === 'number' && typeof input2 === 'number') {
         result = input1 + input2;
     }
@@ -15,6 +15,6 @@ function combine(input1, input2) {
     }
     return result;
 }
-var combinedAges = combine(30, 26);
+const combinedAges = combine(30, 26);
 console.log(combinedAges);
-var combinedNames = combine('surj', 'fluff');
+const combinedNames = combine('surj', 'fluff');

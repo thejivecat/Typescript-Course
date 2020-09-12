@@ -10,7 +10,7 @@ printResult(add(5, 12));
 //used void type if you don't return anything, use undefined 
 //if you just return out of statement
 // let combineValues: Function 
-var combineValues;
+let combineValues;
 // combineValues = 5; //not possible b/c of Function type 
 combineValues = add;
 combineValues = printResult; //not possible b/c printResult doesn't satisfy our Function type
@@ -18,8 +18,8 @@ console.log(combineValues(8, 8)); // prints 16
 console.log(combineValues(8, 8)); // throws runtime error
 //Callbacks and Function types
 function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
+    const result = n1 + n2;
     cb(result);
 }
-addAndHandle(10, 20, function (result) { console.log(result); });
+addAndHandle(10, 20, (result) => { console.log(result); });
 //by stating void type on Function return, ignore the return result

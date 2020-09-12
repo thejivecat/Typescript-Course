@@ -8,7 +8,7 @@ var Role;
     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 })(Role || (Role = {}));
 ; //each property receives a number identifier
-var person4 = {
+const person4 = {
     name: 'surj',
     age: 30,
     hobbies: ['sports', 'cooking'],

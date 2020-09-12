@@ -1,5 +1,5 @@
 "use strict";
-var ex = 'hello';
+const ex = 'hello';
 console.log(ex);
 //if you make any changes-- use tsc [filename] --watch
 //to compile entire project --

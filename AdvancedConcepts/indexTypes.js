@@ -1,6 +1,6 @@
 "use strict";
 // index types
-var errorBag = {
+const errorBag = {
     email: 'not a valid email!',
     id: 'err1',
 };
